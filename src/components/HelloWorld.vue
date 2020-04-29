@@ -26,7 +26,6 @@ export default {
 
     function fetchData() {
       axios.get('http://jsonplaceholder.typicode.com/users').then(res => {
-        // console.log(res.data)
         state.users = res.data
       })
     }
